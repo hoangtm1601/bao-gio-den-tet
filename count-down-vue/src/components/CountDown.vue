@@ -34,7 +34,7 @@
     },
     methods: {
       calculateETA: function (currentDate) {
-        const destinationDate = new Date('2020-01-25')
+        const destinationDate = new Date('2020-01-25').setHours(0,0,0,0)
         let diff = destinationDate - currentDate
         let milliseconds = diff%1000
         diff=(diff-(milliseconds))/1000
